@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Choix difficile</title>
+		<link rel="stylesheet" href="choix-difficile.css" />
+		<script type="text/javascript" src="jquery.js"></script>
+	</head>
+	<body>
+
+		<div class="formpage">
+			<h1>Un choix difficile&nbsp;?</h1>
+			<p>Insérez ci-dessous les choix entre lesquels vous hésitez, je
+			m'occupe personnellement de choisir pour vous :-)</p>
+
+			<form id="choices" autocomplete="off">
+				<p>J'hésite entre les choix suivants&nbsp;:</p>
+				<ul>
+					<li>
+						<input type="text" class="choice" id="choice1" autofocus/>
+					</li>
+					<li>
+						<input type="text" class="choice" id="choice2" />
+					</li>
+				</ul>
+
+				<button>Choisis pour moi&nbsp;!</button>
+			</form>
+
+			<p><small>Rien de ce que vous tapez sur cette page n'est envoyé
+				sur le serveur. Tout est fait en local.</small></p>
+		</div>
+
+		<div class="resultpage">
+			<h1>J'ai choisi pour vous&nbsp;!</h1>
+			<p id="result"></p>
+			<button id="reset">Recommencer</button>
+		</div>
+
+		<audio id="dumroll" preload="auto">
+			<source src="dum_roll.mp3" type="audio/mp3" />
+		</audio>
+
+		<script type="text/javascript" src="choix-difficile.js"></script>
+
+	</body>
+</html>

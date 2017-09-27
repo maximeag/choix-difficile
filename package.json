@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "build": "tsc",
     "bower": "bower install",
     "test": "mocha --recursive src/test"
   },
